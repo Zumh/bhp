@@ -1,0 +1,20 @@
+# create python3 environment
+python3 -m venv venv3
+
+# activate python env 
+source venv3/bin/activate 
+
+we learned that tcp client and server must use same port number for them to communicate in localhost 
+
+we can detect PID or proccess id of client and server
+ps aux | grep <any python file that we executed>
+
+we can kill PID 
+kill -9 <PID>
+
+UDP client cannot communicate with tcp server because of different protocol
+
+# start apache2 server 
+sudo service apache2 start
+sudo service apache2 restart
+sudo service apache2 stop
