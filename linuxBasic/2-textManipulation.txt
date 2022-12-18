@@ -1,0 +1,59 @@
+1. Navigate to /usr/share/wordlists/metasploit. This is a directory of multiple wordlists
+that can be used to brute force passwords in various password-protected devices
+using Metasploit, the most popular pentesting and hacking framework.
+
+
+command:
+cd /usr/share/wordlists/metasploit
+cat *.txt
+
+output:
+lists of password for bruteforce attack
+
+2. Use the cat command to view the contents of the file passwords.lst.
+
+command:
+cat passwords.lst
+
+output:
+list of passwords 
+
+3. Use the more command to display the file passwords.lst.
+command:
+more passwords.lst
+
+output:
+reveal list of passwords.lst contents
+
+4. Use the less command to view the file passwords.lst.
+
+command:
+less passwords.lst
+
+output:
+reveal list of passwords.lst and we can search using / command
+
+5. Now use the nl command to place line numbers on the passwords in passwords.lst.
+There should be 88,396 passwords.
+
+command:
+nl passwrds.lst
+
+output:
+show list of password with line numbers
+
+6. Use the tail command to see the last 20 passwords in passwords.lst.
+command:
+tail -n 20 passwords.lst
+
+output:
+show the last 20 lines of text from the file
+
+7. Use the cat command to display passwords.lst and pipe it to find all the passwords
+that contain 123.
+
+command:
+cat passwords.lst | grep 123
+
+output:
+show list of password that contain 123
